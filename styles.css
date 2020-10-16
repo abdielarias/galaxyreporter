@@ -1,0 +1,464 @@
+
+#homePage{
+	background-repeat: no-repeat;
+	background-size: 1700px 100%;
+}
+
+#index-wrapper{
+	padding-bottom: 0px;
+	width:100%;
+	min-height: 80vh; */
+	/* background-image: url("images/orion.jpg"); */
+	background-size: cover;
+	height:90vh;
+}
+
+body{
+	margin: 0;
+	background-color:black;
+	font-family: 'Saira', sans-serif;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding:20px;
+}
+
+#indexOpening{
+	background-image: url("images/orion.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/* animation: createBox .25s; */
+  /* width: 100%; */
+	height:90vh;
+	display: none;
+}
+
+#indexOpening div{
+	display: grid;
+	grid-template-columns: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+}
+
+#indexOpening div h1{
+	color:white;
+	font-size: 3em;
+	letter-spacing: 1em;
+	text-shadow: 2px 2px 8px black;
+	display: none;
+}
+
+
+/********* Nav styles **********/
+nav a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background-color: rgb(0, 0, 0);
+	margin-top: 5px;
+	float: left;
+	font-size: .9em;
+	letter-spacing: 2px;
+	font-weight: bold;
+	padding:20px;
+
+	border-left: 1px solid rgb(31, 23, 41);
+}
+
+nav a:last-child{
+	border-right: 1px solid rgb(31, 23, 41);
+}
+
+nav a:hover{
+	background-color: rgb(30, 30, 30);
+}
+
+nav{
+	display:inline;
+	float:right;
+	margin-right:50px;
+}
+
+header{
+	padding-top: 20px;
+	background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: 0;
+	content: "";
+	display: inline-table;
+	clear: both;
+}
+
+header img{
+	width: 80px;
+	float:left;
+	margin-left:50px;
+}
+
+header h1{
+
+	font-weight: bold;
+	font-size: 1.2em;
+	color: white;
+	text-align: left;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	margin: 0;
+	display: inline;
+	float: left;
+	padding:20px;
+}
+
+/********* Planet Page styles **********/
+
+#planetPage{
+	background-image: url("images/cosmos.jpg");
+}
+
+p{
+	clear:both;
+	text-align:center;
+	font-weight:bold;
+}
+
+#warning{
+
+	background-color: rgb(0,0,0,0.7);
+	color: grey;
+	margin-top:0;
+	animation-name: fade;
+	animation-duration: 4s;
+}
+
+@keyframes fade {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 4s;
+}
+
+#planetPageMainText{
+	height:700px;
+	width: 700px;
+	background-color:white;
+	color:black;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container{
+	background-color:black;
+}
+
+.hoverBorder{
+
+	margin-right:50px;
+	border-style:solid;
+	border-color: rgb(255, 255, 255, 0);
+	border-width: 1px;
+
+	transition: border-color .3s ease;
+	transition: color 1s ease;
+
+	color: rgb(255, 255, 255, 0);
+}
+
+.hoverBorder:hover{
+	/* border-color: rgb(255, 255, 255, 1); */
+	color: rgb(255, 255, 255, 1);
+}
+
+#smallplanets{
+
+	margin-left:auto;
+	margin-right:auto;
+	width:750px;
+}
+
+#bigplanets{
+
+	margin-left:auto;
+	margin-right:auto;
+	width:770px;
+}
+
+#sun{
+
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0;
+	width:600px;
+}
+
+#sun img{
+	width:400px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#mercury{
+	display:inline-block;
+	padding:2px;
+	margin-left:90px;
+}
+#mercury img{
+	width: 80px;
+	margin-bottom:5px;
+}
+
+#venus{
+	display:inline-block;
+	padding:2px;
+
+}
+#venus img{
+	width: 100px;
+}
+
+#earth{
+	display:inline-block;
+	padding:5px;
+}
+
+#earth img{
+	width: 100px;
+}
+
+#mars{
+	display:inline-block;
+	padding:10px;
+
+}
+#mars img{
+	width: 90px;
+}
+
+#jupiter{
+	display:inline-block;
+	padding:2px;
+	margin-left:50px;
+}
+
+#jupiter img{
+	width: 120px;
+
+}
+
+#saturn{
+	display:inline-block;
+}
+
+#saturn img{
+	width: 160px;
+}
+
+#neptune{
+	display:inline-block;
+}
+
+#neptune img{
+	width: 100px;
+}
+
+#uranus{
+	display:inline-block;
+}
+
+#uranus img{
+	width: 100px;
+}
+/************ Individual Planet Page Styles ***********/
+
+#earthPageImage{
+	height: 400px;
+	margin-top: 10px;
+}
+
+
+
+#marsPageBody{
+
+}
+
+.planetPage{
+	width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: grey;
+	border-radius: 15px;
+	margin-top:20px;
+	margin-bottom:50px;
+	font-family: 'Questrial';
+	font-size: 1.2em;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.planetPage img{
+	background-image: url('images/starsBG.jpg');
+	background-size: cover;
+	border-radius: 15px;
+	margin:20px;
+	padding:40px;
+	height: 400px;
+	align-self: center;
+	justify-self:center;
+}
+
+.panelImageDiv{
+
+}
+
+.panelText p{
+	color: black;
+	text-align: left;
+	/* padding: 10px 300px 10px 300px; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.panelText{
+	padding-right: 20px;
+
+}
+
+@media only screen and (max-width: 37.5em)
+{
+
+}
+
+
+/* Astronomy Pic of the day */
+
+#APOD-page{
+	color: white;
+}
+
+#APOD-banner{
+	text-align: center;
+	background-color: grey;
+	padding:15px;
+}
+
+#APOD-wrapper{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 15px;
+	padding:20px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: grey;
+	color:black;
+}
+
+#APOD-title{
+	font-size: 2.5em;
+}
+
+#picOfDay{
+	display: block;
+	width:100%;
+}
+
+.APOD-iFrame{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:900px;
+	height:650px;
+}
+
+#APOD-explanation{
+	text-indent: 50px;
+	text-align: left;
+	padding:50px 100px 50px 100px;
+
+}
+
+#APOD-copyright{
+
+}
+
+/* Asteroids Page -------------------------------------------------------   */
+
+#asteroids-page{
+	clear:both;
+	color: white;
+}
+
+#asteroids-banner{
+	text-align: center;
+	background-color: grey;
+}
+
+#numberOfNeos{
+	background-color: #404040;
+}
+
+#asteroidDiv{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+
+}
+
+.asteroidPanel{
+	border-radius: 15px;
+	background-color: grey;
+	display: none;
+}
+
+.asteroidTable td{
+	background-color: #404040;
+	padding:5px;
+}
+
+.asteroidTable{
+	padding: 5px;
+}
+
+.asteroidBGDiv{
+	background-position: center;
+	background-repeat: no-repeat;
+	margin:10px;
+	border-radius: 15px;
+}
+
+.asteroidPanel img{
+	padding-top:15px;
+	width: 150px;
+	margin-top:70px;
+	margin-bottom:70px;
+}
+
+.asteroidTable a{
+	text-decoration: none;
+	color:lightblue;
+}
+
+.asteroidTable a:visited{
+	color:lightblue;
+}
+
+.asteroidTable a:hover{
+	color:inherit;
+}
